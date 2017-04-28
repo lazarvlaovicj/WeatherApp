@@ -115,7 +115,7 @@ class WeatherVC: UIViewController, UITableViewDataSource, UITableViewDelegate, C
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let  cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
+        if let  cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as? WeatherCell {
             let forecast = forecasts[indexPath.row]
             cell.configureCell(forecast: forecast)
             return cell
